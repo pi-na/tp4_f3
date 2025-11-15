@@ -13,6 +13,8 @@
 \usepackage{float}
 \usepackage{tabularx}
 
+\graphicspath{{../imagen/}}
+
 \sisetup{
   output-decimal-marker = {,}
 }
@@ -142,6 +144,7 @@ Se utilizó una fuente de tensión alterna de baja tensión, una resistencia ext
     \item Bobina (resistencia interna \(r\) e inductancia \(L\)).
 \end{itemize}
 
+
 Se midieron:
 \begin{itemize}
     \item Corriente eficaz del circuito.
@@ -151,6 +154,47 @@ Se midieron:
 \end{itemize}
 
 Con estos datos se determinó la impedancia total del circuito y la impedancia equivalente de la bobina.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{bobina.png}
+    \caption{Bobina utilizada como elemento inductivo en el circuito serie R--L.}
+    \label{fig:bobina}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{resistencia.png}
+    \caption{Resistencia externa empleada como carga resistiva en el circuito.}
+    \label{fig:resistencia}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{transformador_12_detalle.png}
+    \caption{Detalle del transformador utilizado para alimentar la lámpara de baja tensión.}
+    \label{fig:transformador}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{multimetros.png}
+    \caption{Multímetros digitales empleados para medir tensiones y corrientes eficaces en las distintas configuraciones.}
+    \label{fig:multimetros}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{cables_banana.png}
+    \caption{Cables tipo banana utilizados para realizar las conexiones entre los elementos del circuito.}
+    \label{fig:cables_banana}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{circuito.png}
+    \caption{Montaje del circuito serie R--L con la fuente de CA, la resistencia y la bobina conectadas mediante cables tipo banana.}
+    \label{fig:circuito_RL}
+\end{figure}
 
 \subsection{Medición en artefactos y corrección con capacitores}
 

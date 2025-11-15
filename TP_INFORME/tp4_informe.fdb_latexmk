@@ -1,6 +1,12 @@
 # Fdb version 4
-["pdflatex"] 1763236230.74051 "/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex" "tp4_informe.pdf" "tp4_informe" 1763236231.6483 2
-  "/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex" 1763236229.6462 18217 acfbe5a390ee5ca753a7182178a192eb ""
+["pdflatex"] 1763236921.14433 "/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex" "tp4_informe.pdf" "tp4_informe" 1763236922.75403 2
+  "../imagen/bobina.png" 1763233187.90351 1485047 dd5d61254e7d38f023031ead8ebd1143 ""
+  "../imagen/cables_banana.png" 1763233233.23808 1285638 3555d229e61950905d41973ba3d4a7f8 ""
+  "../imagen/circuito.png" 1763233212.00454 1760179 559d16499c5818e15f974194a914d8f7 ""
+  "../imagen/multimetros.png" 1763233169.70513 1003532 51c67971c16026ac0a3a94dd86886317 ""
+  "../imagen/resistencia.png" 1763233246.07554 413377 e84346e5b2808165adfa377eb08c63ed ""
+  "../imagen/transformador_12_detalle.png" 1763233107.62364 954636 a4ee5e1e436fd269e83bee804198f1de ""
+  "/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex" 1763236919.45762 19678 3f234e95c85dcd0ea2f6e9abdfe706bd ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1741388039 2375 baa924870cfb487815765f9094cf3728 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1741388039 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1741388039 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -98,8 +104,8 @@
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/translations/translations.sty" 1741388039 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/web2c/texmf.cnf" 1741388039 42151 79f67285bdd95beca4d137b380b4b9e5 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1741388039 3346140 981dae4097bc43850a521b8b1e36e95f ""
-  "tp4_informe.aux" 1763236231.54357 2689 e161ecf0abb687fc0e64f33c3da4807b "pdflatex"
-  "tp4_informe.tex" 1763236229.6462 18217 acfbe5a390ee5ca753a7182178a192eb ""
+  "tp4_informe.aux" 1763236922.63622 4133 43ba08b00314d8b90acf592929096445 "pdflatex"
+  "tp4_informe.tex" 1763236919.45762 19678 3f234e95c85dcd0ea2f6e9abdfe706bd ""
   (generated)
   "tp4_informe.aux"
   "tp4_informe.log"
