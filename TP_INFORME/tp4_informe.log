@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  15 NOV 2025 17:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  15 NOV 2025 17:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -424,7 +424,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <../imagen/bobina.png, id=24, 936.49875pt x 1041.8925pt>
 File: ../imagen/bobina.png Graphic file (type png)
 <use ../imagen/bobina.png>
-Package pdftex.def Info: ../imagen/bobina.png  used on input line 160.
+Package pdftex.def Info: ../imagen/bobina.png  used on input line 148.
 (pdftex.def)             Requested size: 136.57462pt x 151.93698pt.
 
 
@@ -432,17 +432,17 @@ Package pdftex.def Info: ../imagen/bobina.png  used on input line 160.
 <../imagen/resistencia.png, id=29, 411.5375pt x 600.2425pt>
 File: ../imagen/resistencia.png Graphic file (type png)
 <use ../imagen/resistencia.png>
-Package pdftex.def Info: ../imagen/resistencia.png  used on input line 167.
+Package pdftex.def Info: ../imagen/resistencia.png  used on input line 155.
 (pdftex.def)             Requested size: 136.57462pt x 199.19803pt.
 <../imagen/transformador_12_detalle.png, id=30, 659.46375pt x 796.9775pt>
 File: ../imagen/transformador_12_detalle.png Graphic file (type png)
 <use ../imagen/transformador_12_detalle.png>
-Package pdftex.def Info: ../imagen/transformador_12_detalle.png  used on input line 173.
+Package pdftex.def Info: ../imagen/transformador_12_detalle.png  used on input line 161.
 (pdftex.def)             Requested size: 136.57462pt x 165.04749pt.
 <../imagen/multimetros.png, id=31, 829.0975pt x 777.90625pt>
 File: ../imagen/multimetros.png Graphic file (type png)
 <use ../imagen/multimetros.png>
-Package pdftex.def Info: ../imagen/multimetros.png  used on input line 180.
+Package pdftex.def Info: ../imagen/multimetros.png  used on input line 168.
 (pdftex.def)             Requested size: 136.57462pt x 128.13533pt.
 
 
@@ -450,19 +450,19 @@ Package pdftex.def Info: ../imagen/multimetros.png  used on input line 180.
 <../imagen/cables_banana.png, id=38, 713.66624pt x 1097.09875pt>
 File: ../imagen/cables_banana.png Graphic file (type png)
 <use ../imagen/cables_banana.png>
-Package pdftex.def Info: ../imagen/cables_banana.png  used on input line 187.
+Package pdftex.def Info: ../imagen/cables_banana.png  used on input line 175.
 (pdftex.def)             Requested size: 136.57462pt x 209.94081pt.
 <../imagen/circuito.png, id=39, 813.0375pt x 1337.99875pt>
 File: ../imagen/circuito.png Graphic file (type png)
 <use ../imagen/circuito.png>
-Package pdftex.def Info: ../imagen/circuito.png  used on input line 194.
+Package pdftex.def Info: ../imagen/circuito.png  used on input line 182.
 (pdftex.def)             Requested size: 182.09486pt x 299.66884pt.
 
 
 [5 <../imagen/multimetros.png> <../imagen/cables_banana.png>]
 
 [6 <../imagen/circuito.png>]
-Underfull \hbox (badness 10000) in alignment at lines 250--250
+Underfull \hbox (badness 10000) in alignment at lines 238--238
 [][] 
  []
 
@@ -470,12 +470,12 @@ Underfull \hbox (badness 10000) in alignment at lines 250--250
 
 [7]
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -484,20 +484,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -506,12 +506,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -520,20 +520,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -542,12 +542,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -556,20 +556,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -578,12 +578,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -592,20 +592,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -614,12 +614,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -628,20 +628,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -650,12 +650,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -664,20 +664,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -686,12 +686,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -700,20 +700,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -722,12 +722,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -736,20 +736,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -758,12 +758,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -772,20 +772,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -794,12 +794,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -808,20 +808,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -830,12 +830,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -844,20 +844,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -866,12 +866,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -880,20 +880,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -902,12 +902,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -916,20 +916,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -938,12 +938,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -952,20 +952,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -974,12 +974,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -988,20 +988,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1010,12 +1010,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -1024,20 +1024,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1046,12 +1046,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -1060,20 +1060,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1082,12 +1082,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -1096,20 +1096,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1118,12 +1118,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -1132,20 +1132,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1154,12 +1154,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -1168,20 +1168,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1190,12 +1190,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -1204,20 +1204,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1226,12 +1226,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Package siunitx Error: Invalid number 'e'.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Package siunitx Error: Invalid number 'e'.
 
 For immediate help type H <return>.
  ...                                              
                                                   
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 
 The input 'e' could not be parsed as a number following the format defined in
@@ -1240,20 +1240,20 @@ module documentation.
 
 Runaway argument?
 \q_stop \exp_after:wN \__siunitx_table_print_marker:w \l__siunitx_table_tmp_tl \ETC.
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Forbidden control sequence found while scanning use of \__siunitx_table_color_check:w.
 <inserted text> 
                 \par 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:328: Missing \endgroup inserted.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:316: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.328     \end{tabularx}
+l.316     \end{tabularx}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1262,17 +1262,17 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 328--328
+Underfull \hbox (badness 10000) in alignment at lines 316--316
 [][][][][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:339: Undefined control sequence.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:327: Undefined control sequence.
 <argument> \volt \ampere \reactive 
                                    
-l.339 \end{align*}
+l.327 \end{align*}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1280,10 +1280,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:339: Undefined control sequence.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:327: Undefined control sequence.
 <argument> \volt \ampere \reactive 
                                    
-l.339 \end{align*}
+l.327 \end{align*}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1291,10 +1291,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:339: Undefined control sequence.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:327: Undefined control sequence.
 <argument> \volt \ampere \reactive 
                                    
-l.339 \end{align*}
+l.327 \end{align*}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1302,10 +1302,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:339: Undefined control sequence.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:327: Undefined control sequence.
 <argument> \volt \ampere \reactive 
                                    
-l.339 \end{align*}
+l.327 \end{align*}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1313,10 +1313,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:348: Undefined control sequence.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:336: Undefined control sequence.
 <argument> \volt \ampere \reactive 
                                    
-l.348 \end{align*}
+l.336 \end{align*}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1324,10 +1324,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:348: Undefined control sequence.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:336: Undefined control sequence.
 <argument> \volt \ampere \reactive 
                                    
-l.348 \end{align*}
+l.336 \end{align*}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1335,10 +1335,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:348: Undefined control sequence.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:336: Undefined control sequence.
 <argument> \volt \ampere \reactive 
                                    
-l.348 \end{align*}
+l.336 \end{align*}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1346,10 +1346,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:348: Undefined control sequence.
+/Users/tomaspinausig/Desktop/f3/tp4_f3/TP_INFORME/tp4_informe.tex:336: Undefined control sequence.
 <argument> \volt \ampere \reactive 
                                    
-l.348 \end{align*}
+l.336 \end{align*}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1360,13 +1360,10 @@ and I'll forget about whatever was undefined.
 
 
 [8]
-
-LaTeX Warning: Reference `fig:fasores' on page 9 undefined on input line 360.
-
 <../imagen/diagrama_fasores.png, id=57, 714.9912pt x 556.7199pt>
 File: ../imagen/diagrama_fasores.png Graphic file (type png)
 <use ../imagen/diagrama_fasores.png>
-Package pdftex.def Info: ../imagen/diagrama_fasores.png  used on input line 364.
+Package pdftex.def Info: ../imagen/diagrama_fasores.png  used on input line 352.
 (pdftex.def)             Requested size: 386.96027pt x 301.30385pt.
 
 
@@ -1384,22 +1381,19 @@ L3 programming layer <2025-01-18>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 10049 strings out of 473190
- 220952 string characters out of 5704335
+ 10046 strings out of 473190
+ 220906 string characters out of 5704335
  602396 words of memory out of 5000000
- 33182 multiletter control sequences out of 15000+600000
- 602276 words of font info for 68 fonts, out of 8000000 for 9000
+ 33179 multiletter control sequences out of 15000+600000
+ 601900 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,13n,80p,857b,827s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,13n,80p,832b,827s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on tp4_informe.pdf (12 pages, 8134333 bytes).
+Output written on tp4_informe.pdf (12 pages, 8139659 bytes).
 PDF statistics:
  120 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream
