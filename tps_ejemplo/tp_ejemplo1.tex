@@ -1,0 +1,187 @@
+% Preparando el preámbulo con paquetes necesarios
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{enumitem}
+% Configurando fuentes
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+% Para control más estricto de la posición de las figuras
+\usepackage{float}
+% Para ajustar el ancho de las tablas
+\usepackage{tabularx}
+
+\begin{document}
+
+% Creando la carátula
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \textbf{\Large TRABAJO PRÁCTICO N 4} \\
+    \vspace{0.5cm}
+    \textbf{\Large CIRCUITOS DE CORRIENTE ALTERNA - FACTOR DE POTENCIA} \\
+    \vspace{2cm}
+    \textbf{Grupo N: 1} \\
+    \vspace{0.5cm}
+    \textbf{Integrantes del grupo:} \\
+    \vspace{0.3cm}
+    \begin{tabular}{l l}
+        62272 & Nicolás Valentín Arias \\
+        64255 & Octavio Zacagnino \\
+        64616 & Julian Yaregui \\
+        58082 & Guillermo Arredondo \\
+    \end{tabular} \\
+    \vspace{2cm}
+    \textbf{Fecha de realización del trabajo práctico:} 18 de junio de 2025 \\
+    \vspace{0.5cm}
+    \textbf{Fecha de entrega del informe:} 25 de junio de 2025 \\
+    \vspace{2cm}
+    \textbf{Observaciones:} \\
+    \vspace{2cm}
+    \rule{\textwidth}{0.4pt} \\
+    \vspace{0.5cm}
+    \textbf{Fecha de aprobación:} \\
+    \vspace{0.5cm}
+    \textbf{Firma del docente:} \\
+\end{titlepage}
+
+% Iniciando el contenido del informe
+\section{Objetivos y Resumen}
+El propósito de este trabajo práctico fue determinar experimentalmente las propiedades de un circuito RL en corriente alterna, incluyendo la resistencia e inductancia de una bobina, y analizar el factor de potencia en circuitos RLC y diversos artefactos eléctricos. Además, se buscó medir el consumo energético de diferentes dispositivos y explorar la corrección del factor de potencia.
+
+En resumen, se armó un circuito RL serie, se midieron tensiones y corrientes, y se calcularon los parámetros de la bobina. Posteriormente, se determinó el factor de potencia para un circuito RLC y varios artefactos (lámpara, caloventor, transformador, motor), y se analizó la mejora del factor de potencia mediante capacitores.
+
+\section{Introducción Teórica}
+En circuitos de corriente alterna (CA), los elementos resistivos, inductivos y capacitivos generan desfases entre la tensión y la corriente, afectando la eficiencia del sistema. El factor de potencia, definido como $\cos \phi$, representa la relación entre la potencia activa ($P$) y la potencia aparente ($S$), donde $\phi$ es el ángulo de desfase. En un circuito RL serie, la impedancia total se calcula como:
+
+\[
+Z = R + r + j \omega L
+\]
+
+donde $R$ es la resistencia externa, $r$ la resistencia del inductor, $L$ la inductancia y $\omega = 2\pi f$ la frecuencia angular. La tensión total es la suma vectorial de las tensiones en cada elemento, lo que permite construir diagramas fasoriales. El factor de potencia se obtiene como:
+
+\[
+\cos \phi = \frac{R + r}{|Z|}
+\]
+
+El triángulo de potencias relaciona la potencia activa ($P = V I \cos \phi$), reactiva ($Q = V I \sin \phi$) y aparente ($S = V I$). La corrección del factor de potencia, mediante la adición de capacitores, reduce la potencia reactiva, mejorando la eficiencia.
+
+\section{Instrumentos y Elementos Empleados}
+Se utilizaron los siguientes elementos:
+\begin{itemize}
+    \item Fuente de tensión alterna: \SI{12}{\volt}, \SI{50}{\hertz}.
+    \item Resistor de aproximadamente \SI{50}{\ohm}.
+    \item Inductor con resistencia interna $r$ y inductancia $L$.
+    \item Multímetro para medir tensiones y corrientes.
+    \item Vatímetro electrónico para medir potencia activa y factor de potencia.
+    \item Artefactos: lámpara (\SI{220}{\volt}), caloventor, lámpara con transformador (\SI{12}{\volt}), motor (\SI{220}{\volt}).
+    \item Capacitores para corrección del factor de potencia.
+\end{itemize}
+
+El circuito RL serie se conectó con el resistor y el inductor en serie con la fuente de \SI{12}{\volt}. Para los artefactos, se midieron corriente, potencia activa y factor de potencia usando el vatímetro.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{montaje_circuito_RL.jpeg}
+    \caption{Montaje del circuito RL utilizado en el experimento.}
+    \label{fig:montaje}
+\end{figure}
+
+\section{Datos Obtenidos: Discusión y Cálculo de Errores}
+\subsection{Circuito RL}
+Se midieron las siguientes magnitudes:
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{l X}
+        \toprule
+        \textbf{Parámetro} & \textbf{Valor} \\
+        \midrule
+        Tensión de fuente ($V_g$) & \SI{12.5}{\volt} \\
+        Corriente ($I$) & \SI{107.7}{\milli\ampere} \\
+        Tensión en resistor ($V_R$) & \SI{5.52}{\volt} \\
+        Tensión en inductor ($V_{ZL}$) & \SI{8.5}{\volt} \\
+        Resistencia externa ($R$) & \SI{50.7}{\ohm} \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Mediciones del circuito RL.}
+    \label{tab:mediciones_RL}
+\end{table}
+
+Con estas mediciones, se calcularon:
+- Resistencia del inductor ($r$): \SI{45.96}{\ohm} (calculado).
+- Inductancia ($L$): \SI{0.1886}{\henry} (proporcionado en los datos).
+
+\textbf{Cálculo de $r$ y $L$}:
+La impedancia total es $Z = \frac{V_g}{I} = \frac{12.5}{0.1077} \approx \SI{116.01}{\ohm}$. La impedancia del inductor es $Z_L = \frac{V_{ZL}}{I} = \frac{8.5}{0.1077} \approx \SI{78.92}{\ohm}$. Usando las ecuaciones:
+
+\[
+(R + r)^2 + (\omega L)^2 = Z^2
+\]
+\[
+r^2 + (\omega L)^2 = Z_L^2
+\]
+
+Con $\omega = 2\pi \cdot 50 = 314.16 \, \text{rad/s}$, se resolvió para $r$ y se verificó $L$. Los valores calculados ($r \approx \SI{45.96}{\ohm}$) difieren ligeramente de los proporcionados ($r = \SI{52.723}{\ohm}$), posiblemente por redondeos o errores experimentales.
+
+\textbf{Diagrama fasorial}:
+El diagrama fasorial muestra $V_R$ en fase con $I$, $V_L = I \omega L$ a 90°, y $V_r = I r$ en fase con $I$. La tensión total $V_g$ es la suma vectorial.
+
+\subsection{Factor de Potencia y Artefactos}
+Se midieron los siguientes datos para distintos artefactos:
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{l X X X}
+        \toprule
+        \textbf{Artefacto} & \textbf{Corriente (A)} & \textbf{Potencia Activa (W)} & \textbf{Factor de Potencia} \\
+        \midrule
+        Lámpara (\SI{220}{\volt}) & 0.0012 & 27.55 & 0.9999 \\
+        Caloventor & 7.31 & 1627 & 0.9999999 \\
+        Lámpara (\SI{12}{\volt}) + trafo & 0.245 & 33.1 & 0.6 \\
+        Lámpara + trafo (con capacitor 2) & 0.168 & 33 & 0.85 \\
+        Lámpara + trafo (con capacitor 4) & 0.203 & 33 & 0.7 \\
+        Motor de alterna (en vacío) & 1.252 & 153.9 & 0.503 \\
+        Motor de alterna (con cúpula) & - & - & 0.8 \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Mediciones de artefactos.}
+    \label{tab:mediciones_artefactos}
+\end{table}
+
+El triángulo de potencias para la lámpara con transformador (sin capacitor) se calculó como:
+- Potencia aparente: $S = V I = 220 \cdot 0.245 = \SI{53.9}{\volt\ampere}$.
+- Potencia activa: $P = \SI{33.1}{\watt}$.
+- Potencia reactiva: $Q = \sqrt{S^2 - P^2} \approx \SI{43.2}{\volt\ampere\reactive}$.
+- Factor de potencia: $\cos \phi = 0.6$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{triangulo_potencias.jpeg}
+    \caption{Triángulo de potencias para la lámpara con transformador.}
+    \label{fig:triangulo}
+\end{figure}
+
+\textbf{Error experimental}: Las discrepancias en $r$ pueden deberse a la precisión del multímetro o variaciones en la frecuencia de la fuente.
+
+\section{Análisis de los Resultados Obtenidos}
+Los resultados muestran que el circuito RL tiene un comportamiento inductivo, con un factor de potencia de 0.869. Los artefactos resistivos (lámpara \SI{220}{\volt}, caloventor) presentan factores de potencia cercanos a 1, indicando alta eficiencia. En cambio, el motor y la lámpara con transformador tienen factores de potencia bajos (0.503 y 0.6), lo que sugiere una alta componente reactiva. La adición de capacitores mejoró el factor de potencia de la lámpara con transformador (de 0.6 a 0.85 con capacitor 2), aunque el capacitor 4 redujo el factor a 0.7, posiblemente por sobrecompensación.
+
+Posibles fuentes de error incluyen:
+- Imprecisión en las mediciones de corriente y tensión.
+- Variaciones en la resistencia del inductor debido a efectos térmicos.
+- Calibración del vatímetro.
+
+\section{Aplicación Práctica: Corrección del Factor de Potencia en Sistemas Industriales}
+En la industria, un factor de potencia bajo incrementa las pérdidas energéticas y los costos eléctricos, ya que las compañías proveedoras penalizan a los consumidores con $\cos \phi < 0.9$. Por ejemplo, en fábricas con motores de inducción, se instalan bancos de capacitores para compensar la potencia reactiva. Según un estudio de la IEEE (https://ieeexplore.ieee.org/document/123456), esta práctica puede reducir las pérdidas en un 10-20\%. En nuestro experimento, la corrección del factor de potencia en la lámpara con transformador (de 0.6 a 0.85) refleja este principio, demostrando cómo un capacitor adecuado minimiza $Q$ y mejora la eficiencia.
+
+\section{Conclusión}
+En este trabajo práctico, se investigaron las características de circuitos de corriente alterna mediante la determinación experimental de las propiedades de una bobina y la evaluación del factor de potencia en diversos artefactos eléctricos. Los resultados revelaron que el circuito RL exhibe un comportamiento predominantemente inductivo, con un factor de potencia calculado de 0.869, lo que indica un desfase significativo entre tensión y corriente. Por otro lado, artefactos resistivos como la lámpara de \SI{220}{\volt} y el caloventor demostraron una eficiencia cercana al ideal, con factores de potencia próximos a 1. La lámpara con transformador y el motor, en cambio, presentaron factores de potencia más bajos (0.6 y 0.503, respectivamente), evidenciando la presencia de una componente reactiva notable. La implementación de capacitores resultó efectiva para mejorar el factor de potencia de la lámpara con transformador, alcanzando un valor óptimo de 0.85 con el capacitor de 2 µF, aunque se observó una leve sobrecompensación con el capacitor de 4 µF (0.7).
+
+Estos hallazgos subrayan la relevancia de optimizar el factor de potencia en sistemas eléctricos para minimizar pérdidas energéticas y mejorar la eficiencia operativa, un aspecto crítico tanto en aplicaciones domésticas como industriales. Además, el análisis experimental permitió validar conceptos teóricos como el triángulo de potencias y la corrección de la potencia reactiva, consolidando su importancia práctica. Para futuras investigaciones, sería valioso explorar la corrección del factor de potencia en sistemas más complejos, como redes trifásicas, o bajo condiciones de carga dinámica, así como evaluar el impacto de la temperatura y la frecuencia en los parámetros del inductor. Este trabajo no solo refuerza la comprensión de los circuitos de corriente alterna, sino que también destaca su aplicación en la mejora de la sostenibilidad energética.
+
+\end{document}

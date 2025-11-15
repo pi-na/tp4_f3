@@ -1,0 +1,334 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{float}
+\usepackage{tabularx}
+
+\sisetup{
+  output-decimal-marker = {,}
+}
+
+\begin{document}
+
+%--------------------- CARÁTULA ---------------------
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \textbf{\Large TRABAJO PRÁCTICO N° 4} \\
+    \vspace{0.5cm}
+    \textbf{\Large CIRCUITOS DE CORRIENTE ALTERNA -- FACTOR DE POTENCIA} \\
+    \vspace{2cm}
+    \textbf{Grupo N°: \underline{\hspace{2cm}}} \\
+    \vspace{0.5cm}
+    \textbf{Integrantes del grupo:} \\
+    \vspace{0.3cm}
+    \begin{tabular}{l l}
+        \underline{\hspace{2cm}} & \underline{\hspace{7cm}} \\
+        \underline{\hspace{2cm}} & \underline{\hspace{7cm}} \\
+        \underline{\hspace{2cm}} & \underline{\hspace{7cm}} \\
+        \underline{\hspace{2cm}} & \underline{\hspace{7cm}} \\
+    \end{tabular} \\
+    \vspace{2cm}
+    \textbf{Fecha de realización del TP:} \underline{\hspace{4cm}} \\
+    \vspace{0.5cm}
+    \textbf{Fecha de entrega del informe:} \underline{\hspace{4cm}} \\
+    \vspace{2cm}
+    \textbf{Observaciones:} \\
+    \vspace{2cm}
+    \rule{\textwidth}{0.4pt} \\
+    \vspace{0.5cm}
+    \textbf{Fecha de aprobación:} \underline{\hspace{4cm}} \\
+    \vspace{0.5cm}
+    \textbf{Firma del docente:} \underline{\hspace{6cm}} \\
+\end{titlepage}
+
+%--------------------- OBJETIVOS Y RESUMEN ---------------------
+\section{Objetivos y resumen}
+
+El objetivo general de este trabajo práctico es estudiar el comportamiento de circuitos de corriente alterna (CA) formados por resistencias e inductancias, analizar las distintas formas de potencia en CA (activa, reactiva y aparente) y determinar experimentalmente el factor de potencia antes y después de realizar una corrección mediante capacitores.
+
+En particular se busca:
+\begin{itemize}
+    \item Determinar experimentalmente los parámetros de una bobina (resistencia interna e inductancia) a partir de mediciones en un circuito serie alimentado en CA.
+    \item Medir y calcular el factor de potencia de un circuito con carga inductiva y de distintos artefactos de uso cotidiano.
+    \item Analizar cómo se modifica la potencia reactiva y el factor de potencia al conectar capacitores en paralelo con cargas predominantemente inductivas.
+    \item Discutir la importancia práctica de mantener un factor de potencia cercano a la unidad en instalaciones reales.
+\end{itemize}
+
+En el laboratorio se armó primero un circuito serie formado por una resistencia externa y una bobina alimentadas por una fuente de CA. Se midieron tensiones, corriente e impedancia equivalente, y a partir de esos datos se determinaron la resistencia interna y la inductancia de la bobina. Luego se midieron potencia activa, corriente y factor de potencia de distintos artefactos (lampara, caloventor, transformador, motor), con y sin capacitores de corrección conectados en paralelo. A partir de las mediciones se calcularon las potencias aparente y reactiva, y se comparó el comportamiento antes y después de la compensación capacitiva.
+
+%--------------------- MARCO TEÓRICO ---------------------
+\section{Marco teórico}
+
+\subsection{Corriente alterna y valores eficaces}
+
+En la red eléctrica se utilizan tensiones y corrientes alternas de forma aproximadamente sinusoidal. Una tensión genérica puede escribirse como
+\[
+v(t) = V_\text{m} \sin(\omega t + \varphi),
+\]
+donde \(V_\text{m}\) es el valor máximo, \(\omega = 2\pi f\) la frecuencia angular y \(\varphi\) un ángulo de fase. Para describir el efecto térmico o de potencia de una señal senoidal se utiliza el \emph{valor eficaz} (\(V_\text{ef}\)), definido como el valor de una tensión continua que produciría el mismo efecto térmico:
+\[
+V_\text{ef} = \frac{V_\text{m}}{\sqrt{2}}.
+\]
+Lo mismo vale para la corriente eficaz \(I_\text{ef}\).
+
+\subsection{Impedancia y representación fasorial}
+
+En CA, la generalización de la resistencia es la \emph{impedancia} compleja \(Z\). Para los elementos básicos se tiene:
+\begin{align*}
+Z_R &= R, \\
+Z_L &= j \omega L, \\
+Z_C &= \frac{1}{j\omega C} = -\,\frac{j}{\omega C},
+\end{align*}
+donde \(R\) es la resistencia, \(L\) la inductancia, \(C\) la capacitancia y \(j\) la unidad imaginaria. En una resistencia pura la tensión y la corriente están en fase. En un inductor ideal la corriente se atrasa \(90^\circ\) respecto de la tensión, mientras que en un capacitor la corriente se adelanta \(90^\circ\).
+
+La representación fasorial permite expresar tensiones y corrientes senoidales mediante números complejos de la forma \(V = V_\text{ef}\angle\varphi\). De este modo, las leyes de Kirchhoff se aplican a fasores y el análisis del circuito se reduce a operaciones algebraicas con impedancias complejas.
+
+\subsection{Potencias en CA y factor de potencia}
+
+En un circuito de CA alimentado con tensiones y corrientes sinusoidales de frecuencia fija se definen:
+\begin{itemize}
+    \item \textbf{Potencia activa} \(P\) (en W): potencia promedio asociada al trabajo útil y a las pérdidas irreversibles.
+    \item \textbf{Potencia reactiva} \(Q\) (en var): asociada a la energía almacenada y devuelta periódicamente por inductores y capacitores.
+    \item \textbf{Potencia aparente} \(S\) (en VA): definida como
+    \[
+    S = V_\text{ef} I_\text{ef}.
+    \]
+\end{itemize}
+
+Estas magnitudes se relacionan mediante el triángulo de potencias:
+\[
+S^2 = P^2 + Q^2.
+\]
+
+El \textbf{factor de potencia} se define como
+\[
+\cos\varphi = \frac{P}{S},
+\]
+donde \(\varphi\) es el ángulo de desfase entre la tensión y la corriente. Un \(\cos\varphi \approx 1\) indica una carga predominantemente resistiva, mientras que valores de \(\cos\varphi\) alejados de 1 (y menores) corresponden a cargas fuertemente inductivas o capacitivas.
+
+En la industria se busca mantener un factor de potencia elevado (típicamente mayor que \(0{,}95\)); de lo contrario, la corriente necesaria para transportar una misma potencia activa es mayor, aumentan las pérdidas por efecto Joule y las empresas distribuidoras pueden aplicar penalizaciones económicas.
+
+\subsection{Corrección del factor de potencia}
+
+Muchas cargas industriales (motores, transformadores, etc.) se comportan como cargas inductivas con \(\cos\varphi\) atrasado. Para reducir la potencia reactiva inductiva (\(Q_L > 0\)) se conectan \textbf{bancos de capacitores} que suministran potencia reactiva capacitiva (\(Q_C < 0\)), de modo que la potencia reactiva total disminuya en valor absoluto.
+
+Si una carga tiene potencia activa \(P\) y factor de potencia inicial \(\cos\varphi_1\) (atrasado), y se desea alcanzar un factor de potencia \(\cos\varphi_2\) más alto, se cumple:
+\begin{align*}
+Q_1 &= P \tan\varphi_1, \\
+Q_2 &= P \tan\varphi_2, \\
+Q_C &= Q_1 - Q_2,
+\end{align*}
+donde \(Q_C\) es la potencia reactiva que debe suministrar el capacitor conectado en paralelo. A partir de \(Q_C\) y de la tensión eficaz de línea puede obtenerse la capacidad necesaria.
+
+%--------------------- MONTAJE EXPERIMENTAL ---------------------
+\section{Montaje experimental}
+
+\subsection{Circuito serie R--L}
+
+Se utilizó una fuente de tensión alterna de baja tensión, una resistencia externa de valor conocido y una bobina con resistencia interna \(r\) e inductancia \(L\) desconocidas. El circuito montado fue un circuito serie formado por:
+\begin{itemize}
+    \item Fuente de CA.
+    \item Resistencia externa \(R\).
+    \item Bobina (resistencia interna \(r\) e inductancia \(L\)).
+\end{itemize}
+
+Se midieron:
+\begin{itemize}
+    \item Corriente eficaz del circuito.
+    \item Tensión eficaz en la resistencia externa.
+    \item Tensión eficaz en la bobina.
+    \item Tensión total de la fuente.
+\end{itemize}
+
+Con estos datos se determinó la impedancia total del circuito y la impedancia equivalente de la bobina.
+
+\subsection{Medición en artefactos y corrección con capacitores}
+
+Se conectaron a la red distintos artefactos y se midieron, mediante instrumentos adecuados, la potencia activa, la corriente eficaz y el factor de potencia. Entre los dispositivos ensayados se incluyen:
+\begin{itemize}
+    \item Lamparita de \SI{220}{\volt}.
+    \item Caloventor en dos posiciones de potencia.
+    \item Transformador (secundario utilizado para una lamparita de baja tensión).
+    \item Motor de corriente alterna, en vacío y bajo carga mecánica.
+    \item Combinaciones del transformador y del motor con capacitores de \SI{2}{\micro\farad} y \SI{4}{\micro\farad} conectados en paralelo para corregir el factor de potencia.
+\end{itemize}
+
+%--------------------- PROCEDIMIENTO ---------------------
+\section{Procedimiento}
+
+\subsection{Determinación de los parámetros de la bobina}
+
+\begin{enumerate}[label=\alph*)]
+    \item Se armó el circuito serie R--L con la resistencia externa y la bobina conectadas a la fuente de CA.
+    \item Se midió la corriente eficaz del circuito y las tensiones en la resistencia, en la bobina y en la fuente.
+    \item A partir de estas mediciones se calculó la impedancia total del circuito y la impedancia equivalente de la bobina.
+    \item Se plantearon ecuaciones para obtener la resistencia interna \(r\) y la inductancia \(L\) de la bobina.
+\end{enumerate}
+
+\subsection{Ensayo de artefactos y corrección del factor de potencia}
+
+\begin{enumerate}[label=\alph*)]
+    \item Para cada artefacto se conectó el instrumento de medida correspondiente y se registraron la potencia activa, la corriente eficaz y el factor de potencia.
+    \item Se calcularon las potencias aparente \(S\) y reactiva \(Q\) a partir de los datos medidos.
+    \item En el caso del transformador y del motor se repitieron las mediciones conectando capacitores de \SI{2}{\micro\farad} y \SI{4}{\micro\farad} en paralelo, observando cómo se modificaban la corriente y el factor de potencia.
+    \item Finalmente se compararon los resultados antes y después de la corrección capacitiva.
+\end{enumerate}
+
+%--------------------- RESULTADOS ---------------------
+\section{Resultados}
+
+\subsection{Circuito serie R--L}
+
+Los datos medidos para el circuito serie R--L se presentan en el cuadro 1 a continuación.
+
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{0.9\textwidth}{l S}
+        \toprule
+        \textbf{Magnitud} & \textbf{Valor medido} \\
+        \midrule
+        Corriente del circuito ($I$) & 0,1015 \,\si{\ampere} \\
+        Tensión en la resistencia ($V_R$) & 5,18 \,\si{\volt} \\
+        Tensión en la bobina ($V_\text{ZL}$) & 8,75 \,\si{\volt} \\
+        Tensión total de la fuente ($V_T$) & 12,55 \,\si{\volt} \\
+        Resistencia externa ($R$) & 51,5 \,\si{\ohm} \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Mediciones en el circuito serie R--L.}
+    \label{tab:mediciones_RL}
+\end{table}
+
+A partir de estos datos se calculan:
+\begin{itemize}
+    \item Impedancia total del circuito:
+    \[
+    Z_\text{tot} = \frac{V_T}{I} \approx \frac{12{,}55}{0{,}1015} \approx 123{,}7\,\si{\ohm}.
+    \]
+    \item Impedancia asociada a la bobina:
+    \[
+    |Z_L| = \frac{V_\text{ZL}}{I} \approx \frac{8{,}75}{0{,}1015} \approx 86{,}2\,\si{\ohm}.
+    \]
+\end{itemize}
+
+Suponiendo que la bobina se modela como una resistencia interna \(r\) en serie con una inductancia \(L\), la impedancia total del circuito puede escribirse como
+\[
+Z_\text{tot} = (R + r) + j\omega L,
+\]
+mientras que la impedancia de la bobina es
+\[
+Z_L = r + j\omega L,
+\]
+donde \(\omega = 2\pi f\) con \(f = \SI{50}{\hertz}\).
+
+Usando las expresiones de los módulos:
+\begin{align*}
+|Z_\text{tot}|^2 &= (R + r)^2 + (\omega L)^2, \\
+|Z_L|^2 &= r^2 + (\omega L)^2,
+\end{align*}
+y los valores numéricos medidos, se obtiene un sistema de ecuaciones del que resulta:
+\begin{align*}
+r &\approx 50{,}7\,\si{\ohm}, \\
+L &\approx 0{,}22\,\si{\henry}.
+\end{align*}
+
+La resistencia total en serie es entonces \(R_\text{real} = R + r \approx 102{,}2\,\si{\ohm}\). La potencia activa consumida por el circuito se puede estimar como
+\[
+P = I^2 (R + r),
+\]
+mientras que la potencia aparente es
+\[
+S = V_T I.
+\]
+Con los valores medidos se obtiene un factor de potencia del orden de
+\[
+\cos\varphi = \frac{P}{S} \approx 0,83
+\]
+lo que indica un comportamiento globalmente inductivo.
+
+\subsection{Artefactos y corrección del factor de potencia}
+
+En el cuadro 2 se resumen las mediciones de potencia activa, corriente eficaz y factor de potencia para los distintos artefactos ensayados. A partir de \(P\) y \(\cos\varphi\) se puede calcular la potencia aparente \(S = P / \cos\varphi\) y la potencia reactiva \(Q = \sqrt{S^2 - P^2}\).
+
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\textwidth}{l S S S S}
+        \toprule
+        \textbf{Elemento} &
+        \textbf{$P$ [W]} &
+        \textbf{$\cos\varphi$} &
+        \textbf{$I$ [A]} &
+        \\
+        \midrule
+        Lamparita \SI{220}{\volt} & 26,2  & 0,999 & 0,119  & Carga casi resistiva \\
+        Caloventor (baja potencia) & 800   & 0,998 & 3,671  & Carga resistiva \\
+        Caloventor (alta potencia) & 1543  & 0,999 & 7,12   & Carga resistiva \\
+        Transformador             & 5,33  & 0,153 & 0,153  & Carga fuertemente inductiva \\
+        Trafo + lamparita \SI{12}{\volt} & 32,2  & 0,709 & 0,205 & Carga con componente inductiva \\
+        Trafo + capacitor \SI{2}{\micro\farad} & 5,43  & 0,367 & 0,0663 & Corrección parcial del FP \\
+        Trafo + capacitor \SI{4}{\micro\farad} & 5,40  & 0,147 & 0,1623 & Sobrecompensación \\
+        Motor en vacío           & 137   & 0,495 & 1,263 & Carga fuertemente inductiva \\
+        Motor con carga          & 225   & 0,642 & 1,261 & Mayor potencia activa \\
+        Motor + capacitor \SI{2}{\micro\farad} & 142,3 & 0,564 & 1,132 & Corrección parcial del FP \\
+        Motor + capacitor \SI{4}{\micro\farad} & 143   & 0,632 & 1,026 & Mejora adicional del FP \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Mediciones de potencia, corriente y factor de potencia en distintos artefactos.}
+    \label{tab:artefactos}
+\end{table}
+
+Como ejemplo, para el transformador sin carga resistiva asociada se tiene:
+\begin{align*}
+P &= 5{,}33\,\si{\watt}, \\
+\cos\varphi &= 0{,}153, \\
+S &= \frac{P}{\cos\varphi} \approx 34{,}8\,\si{\volt\ampere}, \\
+Q &= \sqrt{S^2 - P^2} \approx 34{,}4\,\si{\volt\ampere\reactive},
+\end{align*}
+lo cual confirma que la potencia es principalmente reactiva (carga fuertemente inductiva).
+
+En el caso del motor en vacío:
+\begin{align*}
+P &= 137\,\si{\watt}, \\
+\cos\varphi &= 0{,}495, \\
+S &\approx 276{,}8\,\si{\volt\ampere}, \\
+Q &\approx 238{,}7\,\si{\volt\ampere\reactive},
+\end{align*}
+mostrando también una componente reactiva importante.
+
+Cuando se agregan capacitores en paralelo con el transformador o con el motor, el factor de potencia mejora (se acerca a 1) y la corriente de línea disminuye, aunque para ciertos valores de capacidad puede producirse sobrecompensación, alejando nuevamente el factor de potencia del valor óptimo.
+
+%--------------------- ANÁLISIS Y DISCUSIÓN ---------------------
+\section{Análisis y discusión}
+
+En el circuito serie R--L, los valores obtenidos para la resistencia interna \(r\) y la inductancia \(L\) de la bobina son coherentes con el comportamiento observado: la corriente es menor que la que circularía en una carga puramente resistiva con la misma tensión, y la suma vectorial de las tensiones en \(R\) y en la bobina reproduce la tensión de la fuente. El factor de potencia menor que 1 confirma la presencia de una componente inductiva significativa.
+
+En las mediciones sobre artefactos se observa que:
+\begin{itemize}
+    \item La lamparita de \SI{220}{\volt} y el caloventor presentan factores de potencia muy cercanos a 1, indicativos de cargas principalmente resistivas.
+    \item El transformador y el motor exhiben factores de potencia bajos (\(\cos\varphi\) del orden de 0,15 y 0,5 respectivamente), lo que implica corrientes relativamente altas para una potencia activa moderada y, por lo tanto, mayores pérdidas en las líneas e instalaciones.
+    \item Al conectar capacitores de \SI{2}{\micro\farad} y \SI{4}{\micro\farad} en paralelo con el transformador o el motor, el factor de potencia mejora y la corriente de línea se reduce, especialmente en el caso del motor. Sin embargo, para el transformador se observa que un capacitor demasiado grande provoca una sobrecompensación, alejando nuevamente el factor de potencia de la unidad.
+\end{itemize}
+
+Estos resultados ilustran claramente el rol de los capacitores como elementos de compensación de potencia reactiva en presencia de cargas inductivas. En instalaciones reales se utilizan bancos de capacitores dimensionados para mantener el factor de potencia por encima de un valor mínimo especificado (por ejemplo, \(0{,}95\)), evitando penalizaciones y reduciendo pérdidas.
+
+%--------------------- CONCLUSIONES ---------------------
+\section{Conclusiones}
+
+A partir del estudio experimental del circuito serie R--L se logró determinar la resistencia interna y la inductancia de la bobina, verificando el modelo de impedancia compleja y el uso de fasores para describir tensiones y corrientes en régimen sinusoidal. El factor de potencia obtenido confirmó el carácter inductivo del circuito y la relación entre las tensiones en los distintos elementos y la tensión total de la fuente.
+
+Las mediciones realizadas sobre distintos artefactos mostraron que las cargas resistivas presentan factores de potencia cercanos a 1, mientras que el transformador y el motor de CA introducen potencias reactivas importantes y factores de potencia bajos. La incorporación de capacitores en paralelo permitió mejorar el factor de potencia y reducir la corriente de línea, evidenciando la utilidad práctica de la corrección del factor de potencia mediante bancos de capacitores.
+
+En conjunto, el trabajo permitió relacionar los conceptos teóricos de corriente alterna, impedancia, triángulo de potencias y factor de potencia con experiencias de laboratorio y con situaciones típicas de instalaciones eléctricas reales.
+
+\end{document}
+
+

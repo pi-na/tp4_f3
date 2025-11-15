@@ -1,0 +1,21 @@
+A CONTINUACION PARTE 1,,,,,
+Medicion,Valor,Comentario,,,
+Corriente,"101,5mA",,,,
+Vr,"5,18V",Tension en resistor,,,
+VZL,"8,75V","Tension en inductor (AKA VLr, o solo ""V"")",,,
+VT,"12,55V",Tension en fuente (AKA Vg),,,
+Resistencia externa,"51,5ohm",,,,
+A CONTINUACION PARTE 2,,,,,
+elemento ,P,"factor de potencia (puramente resistivo, =0,99)",,I,comentario
+lamparita 220V,"26,2W","0,999",,119mA,no es puramente resistivo
+caloventor (switch para arriba),"0,800W","0,998",,"3,671A",
+caloventor (switch para abajo),"1,543KW","0,999",,"7,12A",
+transformador,"5,33 W","0,153",,153mA,"es un bobinado, fuertemente inductivo"
+transformador + lamaparita 12V,"32,2W","0,709",,205mA,
+se le puede poner un capacitor tan grande que la suma de vectores termina haciendo que disminuya el factor de potencia,,,,,
+transformador con capactior de 2 micro F en paralelo,"5,43W","0,367",,"66,3mA",AUMENTA factor de potencia
+transformador con capactior de 4 micro F en paralelo,"5,4W","0,147",,"162,3mA",DISMINUYO factor de potencia
+motor girando solo,137W,"0,495",,"1,263A","el motor solo se puede corregir con un capacitor en paralelo, ya que los fasores van en contrario"
+"MOTOR CON CARGA hago trabajo sobre el motor, freno el motor desde el eje. va a requerir mas potencia para mantener las revoluciones. la potenica util deberia mayor.",225W,"0,642",,"1,261A",
+motor con capacitor de 2 micro F en paralelo,"142,3W","0,564",,"1,132A",AUMENTA factor de potencia
+motor con capacitor de 4 micro F en paralelo,143W,"0,632",,"1,026A",

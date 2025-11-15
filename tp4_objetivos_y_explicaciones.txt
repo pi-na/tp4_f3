@@ -1,0 +1,304 @@
+TP 4 – Circuitos de corriente alterna – Factor de potencia
+Lista detallada de objetivos y explicaciones para guiar el trabajo práctico de laboratorio
+
+IMPORTANTE PARA GPT-5.1:
+Este documento está pensado como una “hoja de ruta” completa de todo lo que hay que hacer y explicar en el TP4, asumiendo un típico trabajo de laboratorio de corriente alterna y factor de potencia. Úsalo como checklist: ningún punto debería quedar sin ser considerado en el informe final ni en los cálculos/explicaciones.
+
+------------------------------------------------------------
+1) OBJETIVOS GENERALES DEL TP
+------------------------------------------------------------
+
+1.1. Comprender el comportamiento de los circuitos de corriente alterna (CA) formados por resistencias, inductancias y capacitancias, tanto en forma individual como combinada.
+
+1.2. Entender y aplicar el concepto de fasor para representar tensiones y corrientes sinusoidales en régimen permanente.
+
+1.3. Definir, calcular y medir las distintas formas de potencia en CA: potencia activa (P), potencia reactiva (Q) y potencia aparente (S).
+
+1.4. Comprender el concepto de factor de potencia (cos φ), su significado físico, su relación con el triángulo de potencias y su impacto sobre la eficiencia de uso de la energía eléctrica.
+
+1.5. Analizar experimentalmente cómo se modifica el factor de potencia de un circuito alimentado en CA cuando se varía el tipo de carga (resistiva, inductiva, capacitiva, o combinaciones de ellas).
+
+1.6. Diseñar e implementar una corrección del factor de potencia mediante la conexión de un capacitor adecuado en paralelo (o en serie, según la consigna) con la carga inductiva, y verificar experimentalmente la mejora lograda.
+
+1.7. Desarrollar y ejercitar criterios de comparación entre resultados teóricos (cálculos) y resultados experimentales (mediciones), estimando y discutiendo fuentes de error.
+
+1.8. Fomentar el uso correcto y seguro de los instrumentos de laboratorio (multímetros, wattímetros, fuentes de CA, transformadores, etc.) en mediciones de corriente alterna.
+
+------------------------------------------------------------
+2) OBJETIVOS ESPECÍFICOS (DESGLOSADOS)
+------------------------------------------------------------
+
+2.1. Señales sinusoidales de CA
+  a) Reconocer las magnitudes fundamentales de una señal sinusoidal: amplitud, valor pico a pico, período, frecuencia angular ω, frecuencia f y valor eficaz (RMS).
+  b) Explicar la relación cuantitativa entre el valor eficaz y el valor máximo para una señal senoidal pura (Vrms = Vmax / √2).
+  c) Distinguir cualitativamente las diferencias entre corriente continua (CC) y corriente alterna (CA), especialmente en relación con la transferencia de potencia y el efecto térmico.
+
+2.2. Representación fasorial
+  a) Introducir el concepto de fasor como representación compleja de magnitudes sinusoidales en régimen estacionario.
+  b) Mostrar cómo pasar de la forma temporal v(t) = Vm·sin(ωt + φ) a la representación fasorial V = Vrms ∠φ.
+  c) Relacionar la suma de fasores con la superposición de señales sinusoidales, y cómo esta herramienta simplifica el análisis de circuitos de CA.
+
+2.3. Impedancia de elementos R, L y C
+  a) Definir impedancia Z como la generalización compleja de la resistencia en CA.
+  b) Presentar las expresiones:
+     - Resistencia: Z_R = R (real, sin parte imaginaria).
+     - Inductancia: Z_L = jωL (parte imaginaria positiva).
+     - Capacitancia: Z_C = 1 / (jωC) = -j / (ωC) (parte imaginaria negativa).
+  c) Explicar el desfase entre tensión y corriente en cada elemento:
+     - En R: tensión y corriente en fase.
+     - En L: corriente retrasada 90° respecto de la tensión.
+     - En C: corriente adelantada 90° respecto de la tensión.
+  d) Discutir el significado físico de la reactancia inductiva XL = ωL y la reactancia capacitiva XC = 1/(ωC).
+
+2.4. Circuitos RLC (configuraciones típicas)
+  a) Circuito serie R–L, R–C o R–L–C:
+     - Cálculo de la impedancia total Z_total en forma compleja.
+     - Cálculo del módulo |Z_total| y del ángulo de fase φ entre tensión y corriente.
+  b) Circuito paralelo R–L, R–C o combinaciones:
+     - Uso de admitancias (Y = 1/Z) para simplificar el análisis.
+     - Cálculo de la corriente total a partir de las corrientes de rama.
+  c) Comportamiento en resonancia (si aplica la consigna):
+     - Definir frecuencia de resonancia ω0 = 1/√(LC) (para circuito RLC serie estándar).
+     - Explicar qué ocurre con la corriente, la impedancia y las potencias en la resonancia.
+
+2.5. Potencias en CA y triángulo de potencias
+  a) Definir potencia instantánea p(t) = v(t)·i(t) y comentar su comportamiento en cargas puramente resistivas vs. inductivas/capacitivas.
+  b) Definir:
+     - Potencia activa P (en watts, W): asociada al trabajo útil y a las pérdidas irreversibles.
+     - Potencia reactiva Q (en voltampere reactivos, var): asociada a los campos magnéticos y eléctricos alternantes en L y C.
+     - Potencia aparente S (en voltampere, VA): S = V_rms·I_rms.
+  c) Introducir el triángulo de potencias: S² = P² + Q².
+  d) Definir factor de potencia:
+     - cos φ = P / S = potencia activa / potencia aparente.
+     - Relacionar φ con el ángulo de la impedancia o con el desfase entre tensión e intensidad.
+  e) Explicar las consecuencias de un factor de potencia bajo:
+     - Mayor corriente para entregar la misma potencia activa.
+     - Sobrecorriente en conductores, transformadores y equipos.
+     - Mayores pérdidas por efecto Joule.
+     - Posibles penalizaciones económicas por parte de la empresa distribuidora.
+
+2.6. Corrección del factor de potencia (compensación)
+  a) Explicar en términos cualitativos por qué una carga inductiva (φ positivo, Q>0) produce un factor de potencia atrasado.
+  b) Introducir la idea de compensar la potencia reactiva inductiva agregando una potencia reactiva capacitiva de signo opuesto.
+  c) Derivar fórmula para la capacidad C necesaria para pasar de un factor de potencia inicial cos φ1 a un factor de potencia deseado cos φ2 (típicamente cercano a 1):
+     - Partir de: Q1 = P·tan φ1, Q2 = P·tan φ2.
+     - La potencia reactiva del capacitor: Qc = Q1 − Q2.
+     - Relacionar Qc con la impedancia capacitiva y con la tensión del sistema para obtener C.
+  d) Discutir los límites prácticos de la corrección (sobrecompensación, resonancias indeseadas, etc.).
+
+2.7. Medición experimental de magnitudes en CA
+  a) Describir el uso correcto de:
+     - Multímetro digital/analógico (modo AC) para medir tensiones e intensidades eficaces.
+     - Wattímetro (si se dispone) para medir potencia activa.
+     - Posible uso de osciloscopio para observar formas de onda, amplitudes y desfases (si el TP lo contempla).
+  b) Explicar la conexión de los instrumentos:
+     - Cómo se conecta el wattímetro (bornes de tensión/corriente).
+     - Cómo se conecta el amperímetro en serie y el voltímetro en paralelo.
+  c) Comentar la influencia de la resistencia interna de los instrumentos en las mediciones (error sistemático).
+
+------------------------------------------------------------
+3) TAREAS EXPERIMENTALES TÍPICAS A CUMPLIR
+------------------------------------------------------------
+
+3.1. Montaje del circuito básico de CA
+  a) Identificar los elementos del banco de laboratorio:
+     - Fuente de CA (red + transformador, fuente didáctica, etc.).
+     - Resistencia (carga resistiva conocida).
+     - Bobina (inductor) de valor conocido o aproximado.
+     - Capacitor(s) disponibles para corrección de factor de potencia.
+     - Cables banana y conexiones.
+  b) Dibujar el esquema del circuito básico (según la consigna original), por ejemplo:
+     - Fuente de CA – resistencia – bobina en serie.
+     - Fuente de CA – transformador – carga R–L.
+
+3.2. Medición con carga resistiva pura
+  a) Conectar únicamente la resistencia como carga.
+  b) Medir:
+     - Tensión eficaz en la carga (VR).
+     - Corriente eficaz (IR).
+     - Potencia activa (PR) con el wattímetro, si está disponible.
+  c) Calcular:
+     - Impedancia equivalente ZR = VR / IR (debe ser aproximadamente R).
+     - Potencias P, Q (≈0 en carga resistiva ideal), S.
+     - Factor de potencia cos φ (≈1).
+  d) Comentar la concordancia entre teoría y práctica.
+
+3.3. Medición con carga inductiva (R–L)
+  a) Conectar la bobina (y la resistencia asociada, si el inductor no es ideal) según el circuito indicado en la consigna.
+  b) Medir:
+     - Tensión eficaz total en la carga (V).
+     - Corriente eficaz (I).
+     - Potencia activa P con wattímetro (si está disponible).
+  c) Calcular:
+     - Impedancia compleja aproximada del conjunto (a partir de V, I y P).
+     - Reactancia equivalente XL.
+     - Potencias P, Q, S.
+     - Factor de potencia cos φ = P/S.
+  d) Representar el triángulo de potencias y el diagrama fasorial de tensiones y corrientes.
+  e) Comparar con los valores teóricos obtenidos a partir de los parámetros nominales de R y L.
+
+3.4. Corrección del factor de potencia con un capacitor
+  a) Diseñar, a partir de los datos de P y del factor de potencia medido (cos φ1), la capacidad C necesaria para alcanzar un factor de potencia deseado cos φ2 (por ejemplo 0,95 o 1).
+  b) Seleccionar en el laboratorio el capacitor (o combinación de capacitores) más cercano al valor calculado.
+  c) Conectar el capacitor según la consigna (típicamente en paralelo con la carga inductiva).
+  d) Repetir las mediciones:
+     - Tensión eficaz en la carga.
+     - Corriente eficaz total.
+     - Potencia activa P ( debería ser casi la misma que antes, si la tensión no cambió mucho).
+  e) Calcular el nuevo factor de potencia cos φ2 y las nuevas potencias P, Q, S.
+  f) Representar el triángulo de potencias antes y después de la corrección.
+  g) Comparar la reducción de la corriente de línea y discutir el ahorro de pérdidas y la mejora de condiciones de operación.
+
+3.5. Variación de la carga (si la consigna lo pide)
+  a) Repetir mediciones para diferentes valores de carga (por ejemplo, varias resistencias o varias inductancias).
+  b) Analizar cómo cambian:
+     - Corriente total.
+     - Potencias P, Q, S.
+     - Factor de potencia.
+  c) Discutir qué tipo de cargas tienden a empeorar o mejorar el factor de potencia.
+
+------------------------------------------------------------
+4) PROCESAMIENTO DE DATOS Y CÁLCULOS A REALIZAR
+------------------------------------------------------------
+
+4.1. Tablas de datos
+  a) Armar tablas separadas para cada configuración:
+     - Sólo R.
+     - R–L (antes de la corrección).
+     - R–L–C (después de la corrección).
+  b) Incluir en las tablas:
+     - Tensión eficaz de alimentación.
+     - Corriente eficaz.
+     - Potencia medida con el wattímetro.
+     - Parámetros de los elementos (R, L, C).
+
+4.2. Cálculo de magnitudes derivadas
+  Para cada estado del circuito:
+  a) Impedancia total Z (módulo y ángulo).
+  b) Potencias:
+     - P = potencia activa (medida o calculada).
+     - Q = potencia reactiva, a partir de Q = √(S² − P²) o Q = P·tan φ.
+     - S = V·I.
+  c) Factor de potencia:
+     - cos φ = P/S.
+     - Determinar si es atrasado (carga inductiva) o adelantado (carga capacitiva).
+  d) Corrientes de rama (si hay configuración en paralelo).
+
+4.3. Comparación teórico–experimental
+  a) Para cada magnitud (V, I, P, Q, S, cos φ), comparar:
+     - Valor teórico (a partir de los modelos R, L, C).
+     - Valor experimental medido.
+  b) Calcular el error relativo o porcentual.
+  c) Discutir la posible causa de discrepancias:
+     - Tolerancia de los componentes.
+     - Impedancia interna de la fuente y de los instrumentos.
+     - Errores de lectura o conexión.
+
+4.4. Verificación de la corrección del factor de potencia
+  a) Comprobar numéricamente que la potencia activa P se mantiene aproximadamente constante antes y después de la corrección.
+  b) Verificar que la corriente de línea disminuye al mejorar el factor de potencia.
+  c) Calcular el porcentaje de reducción de corriente y de potencia aparente S.
+  d) Confirmar que la potencia reactiva global del circuito disminuye (|Q_final| < |Q_inicial|).
+
+------------------------------------------------------------
+5) EXPLICACIONES TEÓRICAS A DESARROLLAR EN EL INFORME
+------------------------------------------------------------
+
+5.1. Marco teórico de la corriente alterna
+  a) Explicar el origen físico de la corriente alterna (alternadores, red eléctrica).
+  b) Mostrar la forma matemática de una onda sinusoidal de tensión y corriente.
+  c) Diferenciar claramente valor pico, valor medio y valor eficaz.
+
+5.2. Fasores e impedancia
+  a) Desarrollar el concepto de fasor desde el punto de vista geométrico y algebraico.
+  b) Mostrar cómo los fasores simplifican las ecuaciones diferenciales de R, L y C en ecuaciones algebraicas complejas.
+  c) Explicar por qué el análisis fasorial solo es válido en régimen permanente sinusoidal.
+
+5.3. Potencias y factor de potencia
+  a) Profundizar el significado físico de P, Q y S (trabajo, energía almacenada y devuelta, etc.).
+  b) Introducir el triángulo de potencias y su relación con el triángulo de impedancias.
+  c) Explicar por qué el factor de potencia bajo implica mayores corrientes para la misma potencia activa.
+
+5.4. Necesidad de corregir el factor de potencia
+  a) Discutir las razones técnicas y económicas para mantener un factor de potencia alto:
+     - Menores pérdidas en líneas y transformadores.
+     - Mejor aprovechamiento de la capacidad de generación y transporte.
+     - Evitar cargos adicionales por parte de la distribuidora.
+  b) Describir diferentes métodos de corrección:
+     - Compensación fija con capacitores.
+     - Compensación automática escalonada (bancos de capacitores con control).
+     - Uso de filtros pasivos o activos (mención breve, si excede el nivel del TP).
+
+5.5. Análisis de los resultados experimentales del TP
+  a) Interpretar las mediciones obtenidas de forma coherente con la teoría:
+     - Comentar cómo se observa en la práctica el efecto de la inductancia sobre el desfase.
+     - Mostrar cómo el agregado de un capacitor modifica el diagrama fasorial.
+  b) Discutir si la corrección de factor de potencia fue suficiente para alcanzar el valor deseado.
+  c) Explicar las posibles limitaciones del montaje en laboratorio (valores discretos de capacitores, tensión transformada, etc.).
+
+------------------------------------------------------------
+6) ESTRUCTURA SUGERIDA DEL INFORME FINAL
+------------------------------------------------------------
+
+6.1. Introducción
+  - Presentar brevemente el objetivo del TP: estudio de circuitos de CA y factor de potencia, importancia práctica.
+
+6.2. Marco teórico
+  - Desarrollar todos los conceptos de CA, fasores, impedancias, potencias y factor de potencia mencionados arriba.
+
+6.3. Montaje experimental
+  - Describir el circuito armado, incluir esquemas y fotos (si es posible).
+  - Indicar instrumentos utilizados y sus rangos.
+
+6.4. Procedimiento
+  - Enumerar los pasos realizados en el laboratorio: mediciones con R, con R–L, con R–L–C, variaciones de carga, etc.
+
+6.5. Resultados
+  - Presentar las tablas de datos medidos.
+  - Presentar los cálculos derivados (Z, P, Q, S, cos φ, etc.).
+
+6.6. Discusión
+  - Analizar coherencia de los resultados con la teoría.
+  - Discutir errores, discrepancias y posibles mejoras.
+  - Evaluar cuantitativamente la mejora del factor de potencia.
+
+6.7. Conclusiones
+  - Resumir los aprendizajes principales sobre circuitos de CA y factor de potencia.
+  - Destacar la importancia de la corrección de factor de potencia en instalaciones reales.
+
+6.8. Bibliografía / referencias
+  - Incluir apuntes de cátedra, libros de texto de electromagnetismo, normas técnicas sobre factor de potencia, etc.
+
+------------------------------------------------------------
+7) CHECKLIST PARA GPT-5.1
+------------------------------------------------------------
+
+Al trabajar con este TP4, el modelo GPT-5.1 debería:
+
+  1) Verificar que se explican:
+     - Conceptos básicos de CA (señal sinusoidal, valores RMS).
+     - Fasores e impedancia compleja de R, L, C.
+     - Potencias P, Q, S y triángulo de potencias.
+     - Factor de potencia y su significado físico.
+     - Métodos de corrección del factor de potencia con capacitores.
+
+  2) Asegurarse de que el informe incluya:
+     - Esquemas de los circuitos montados.
+     - Descripción clara del procedimiento experimental.
+     - Tablas de datos medidos y unidades correctas.
+     - Cálculos detallados de Z, P, Q, S, cos φ antes y después de la corrección.
+     - Gráficos o diagramas fasoriales representativos.
+
+  3) Revisar que se discutan:
+     - Diferencias entre teoría y experimento.
+     - Posibles fuentes de error.
+     - Impacto de la corrección de factor de potencia en la corriente de línea y en las pérdidas.
+
+  4) Validar que las conclusiones:
+     - Sean coherentes con los resultados numéricos.
+     - Enfatizen la importancia del factor de potencia en sistemas reales.
+     - Mencionen aplicaciones prácticas (instalaciones industriales, domiciliarias, etc.).
+
+Con esta lista de objetivos y explicaciones, el modelo dispone de una guía amplia y detallada para desarrollar el TP4, redactar el informe completo, resolver cálculos, justificar resultados y responder preguntas conceptuales relacionadas con circuitos de corriente alterna y factor de potencia.
+
+
