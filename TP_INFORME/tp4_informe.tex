@@ -353,7 +353,20 @@ Cuando se agregan capacitores en paralelo con el transformador o con el motor, e
 %--------------------- ANÁLISIS Y DISCUSIÓN ---------------------
 \section{Análisis y discusión}
 
+\subsection{Determinación de los parámetros de la bobina}
+
 En el circuito serie R--L, los valores obtenidos para la resistencia interna \(r\) y la inductancia \(L\) de la bobina son coherentes con el comportamiento observado: la corriente es menor que la que circularía en una carga puramente resistiva con la misma tensión, y la suma vectorial de las tensiones en \(R\) y en la bobina reproduce la tensión de la fuente. El factor de potencia menor que 1 confirma la presencia de una componente inductiva significativa.
+
+El diagrama de fasores presentado en la Figura~\ref{fig:fasores} muestra la relación vectorial entre las distintas tensiones del circuito. Se toma la corriente \(I\) como referencia (en el eje real), de modo que \(V_R\) y \(V_r\) aparecen también en el eje real (están en fase con la corriente). La tensión inductiva \(V_L = I \omega L\) aparece en el eje imaginario (adelantada \(90^\circ\) respecto de la corriente). La tensión total en la bobina \(V_{ZL}\) es la suma vectorial de \(V_r\) y \(V_L\), y la tensión de la fuente \(V_T\) es la suma vectorial de \(V_R\) y \(V_{ZL}\). El ángulo \(\varphi \approx 34{,}2^\circ\) representa el desfase entre la tensión total y la corriente, determinando un factor de potencia \(\cos\varphi \approx 0{,}83\).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{diagrama_fasores.png}
+    \caption{Diagrama de fasores del circuito serie R--L, mostrando las tensiones \(V_R\) (en resistencia externa), \(V_r\) (en resistencia interna de la bobina), \(V_L\) (componente inductiva), \(V_{ZL}\) (tensión total en la bobina) y \(V_T\) (tensión de la fuente). El ángulo \(\varphi\) indica el desfase entre tensión y corriente.}
+    \label{fig:fasores}
+\end{figure}
+
+\subsection{Artefactos y corrección del factor de potencia}
 
 En las mediciones sobre artefactos se observa que:
 \begin{itemize}
